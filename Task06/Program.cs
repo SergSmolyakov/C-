@@ -19,4 +19,3 @@ if (res == 0)
 }
 else
 Console.WriteLine($"Число {num1} нечетное");
-
