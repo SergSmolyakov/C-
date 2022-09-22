@@ -6,19 +6,13 @@
 
 // 32679 -> 6
 
-System.Console.WriteLine("Введи цифру от 1 до 7, обозначающую день недели ");
-int dayNum = Convert.ToInt32(Console.ReadLine());
-
-void ChekingTheDayWeek (int dayNum) {
-    if(dayNum == 6 || dayNum == 7) {
-        System.Console.WriteLine("Это выходной день? => Да");
-    }
-    else if (dayNum < 1 || dayNum > 7) {
-        System.Console.WriteLine("Введите число от 1 до 7, веденное вами число вне этого диапазона");
-    }
-    else
-    {
-        System.Console.WriteLine("Это выходной день? => Нет");
-    }
+System.Console.WriteLine("Введи число и я покажу третью цифру ");
+int num = Convert.ToInt32(Console.ReadLine());
+string numStr = Convert.ToString(num);
+if(numStr.Length > 2){
+    System.Console.WriteLine("Третья цифра => " + numStr[2]);
 }
-ChekingTheDayWeek(dayNum);
+else
+{
+    System.Console.WriteLine("=> нет третьей цифры");
+}
