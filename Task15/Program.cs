@@ -21,3 +21,7 @@ void ChekingTheDayWeek (int dayNum) {
     }
 }
 ChekingTheDayWeek(dayNum);
+
+double num = 3.09987565; // 3.09
+double numRound = Math.Round(num, 2, MidpointRounding.ToZero);
+System.Console.WriteLine(numRound);
